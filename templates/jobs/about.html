@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us - Job Portal{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-3">About Job Portal</h1>
+                <p class="lead">Connecting talented professionals with amazing opportunities since 2025.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <i class="fas fa-briefcase fa-10x opacity-25"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="fw-bold mb-3">Our Mission</h2>
+                <p class="lead text-muted">
+                    To bridge the gap between exceptional talent and outstanding companies,
+                    creating meaningful career opportunities that transform lives and drive business success.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-12">
+                <h2 class="fw-bold mb-3">Why Choose Us?</h2>
+                <p class="text-muted">We're committed to making the job search and hiring process easier</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-search fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Easy Job Search</h5>
+                        <p class="card-text text-muted">
+                            Advanced search filters to help you find the perfect job match quickly and efficiently.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-success"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Verified Companies</h5>
+                        <p class="card-text text-muted">
+                            All companies are thoroughly vetted and approved to ensure legitimacy and quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-rocket fa-3x text-danger"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Fast Applications</h5>
+                        <p class="card-text text-muted">
+                            Apply to multiple jobs with a single click using your saved profile and resume.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <div class="p-4">
+                    <i class="fas fa-briefcase fa-3x text-primary mb-3"></i>
+                    <h3 class="fw-bold">{{ total_jobs|default:"1000+" }}</h3>
+                    <p class="text-muted">Active Jobs</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4">
+                    <i class="fas fa-building fa-3x text-success mb-3"></i>
+                    <h3 class="fw-bold">{{ total_companies|default:"250+" }}</h3>
+                    <p class="text-muted">Registered Companies</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4">
+                    <i class="fas fa-users fa-3x text-info mb-3"></i>
+                    <h3 class="fw-bold">{{ total_users|default:"5000+" }}</h3>
+                    <p class="text-muted">Job Seekers</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-4">
+                    <i class="fas fa-check-circle fa-3x text-warning mb-3"></i>
+                    <h3 class="fw-bold">{{ total_applications|default:"10,000+" }}</h3>
+                    <p class="text-muted">Applications Sent</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-12 text-center">
+                <h2 class="fw-bold mb-3">How It Works</h2>
+                <p class="text-muted">Getting started is easy</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fs-4 fw-bold">1</span>
+                    </div>
+                    <h5 class="fw-bold">Create Account</h5>
+                    <p class="text-muted small">Sign up as a job seeker or company in minutes</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fs-4 fw-bold">2</span>
+                    </div>
+                    <h5 class="fw-bold">Complete Profile</h5>
+                    <p class="text-muted small">Add your details, skills, and upload resume</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fs-4 fw-bold">3</span>
+                    </div>
+                    <h5 class="fw-bold">Apply for Jobs</h5>
+                    <p class="text-muted small">Browse listings and apply with one click</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center">
+                    <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <span class="fs-4 fw-bold">4</span>
+                    </div>
+                    <h5 class="fw-bold">Get Hired</h5>
+                    <p class="text-muted small">Connect with employers and land your dream job</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="fw-bold mb-2">Ready to Get Started?</h2>
+                <p class="mb-0">Join thousands of job seekers and companies already using our platform.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                {% if not user.is_authenticated %}
+                    <a href="{% url 'jobseeker_register' %}" class="btn btn-light btn-lg me-2">
+                        <i class="fas fa-user-plus me-2"></i> Sign Up Now
+                    </a>
+                {% else %}
+                    <a href="{% url 'job_list' %}" class="btn btn-light btn-lg">
+                        <i class="fas fa-search me-2"></i> Browse Jobs
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
